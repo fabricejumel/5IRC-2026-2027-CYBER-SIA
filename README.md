@@ -7,7 +7,7 @@ Bienvenue sur ce dépôt dédié à l'étude de la robustesse des modèles de vi
 ---
 
 ## 🎯 1. Introduction à YOLOv8
-**YOLOv8**, développé par [Ultralytics](https://github.com/ultralytics/ultralytics), est l'un des modèles de state-of-the-art les plus rapides et précis pour la détection d'objets, la segmentation d'instances et la classification. 
+**YOLOv8**, développé par [Ultralytics](https://github.com/ultralytics/ultralytics), est l'un des modèles de state-of-the-art les plus rapides et précis pour la détection d'objets, la segmentation d'instances et la classification (même si plus discutable). 
 * 🧪 **Tester en ligne :** Vous pouvez tester les capacités de détection en temps réel via l'interface [Hugging Face Spaces - YOLOv8](https://huggingface.co/spaces/Ultralytics/YOLOv8).
 * 📚 **Ressources Officielles :** Pour aller plus loin sur l'architecture, la structure des **datasets** (comme COCO) et l'entraînement de vos propres modèles, consultez la [[documentation officielle d'Ultralytics](https://docs.ultralytics.com/models/yolov8).
 
