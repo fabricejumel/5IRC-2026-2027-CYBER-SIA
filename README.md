@@ -48,8 +48,6 @@ Ce dépôt contient trois approches méthodologiques implémentées sous Google 
 ## 🚀 5. Conclusion & Perspectives : Robustesse en Conditions Réelles
 Si ces travaux démontrent la vulnérabilité des modèles actuels face à des perturbations optimisées (patchs physiques, bruits subtils), la recherche en IA se tourne massivement vers la **défense et la robustesse**. 
 
-Pour sécuriser ces systèmes en conditions réelles (véhicules autonomes, vidéosurveillance, etc.), les pistes actuelles incluent l'entraînement contradictoire (*Adversarial Training*), le renforcement des architectures et la purification des entrées.
-* 💡 *Pour aller plus loin sur la défense robuste :* [OpenCV Adversarial Robustness Guide](https://opencv.org/).
 
 ---
 *Créé et documenté dans le cadre de l'évaluation de la sécurité des architectures de Deep Learning.*
