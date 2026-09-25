@@ -65,6 +65,11 @@ Ce dépôt contient trois approches méthodologiques implémentées sous Google 
 ## 5. Conclusion & Perspectives : Robustesse en Conditions Réelles
 Si ces travaux démontrent la vulnérabilité des modèles actuels face à des perturbations optimisées (patchs physiques, bruits subtils), la recherche en IA se tourne massivement vers la **défense et la robustesse**. 
 
+> **💡 Info : Vers les Vision Transformers (ViT) & Transfert d'attaques**
+> 
+> Face aux CNN de YOLO, les **Vision Transformers (ViT)** — basés sur le mécanisme d'attention des LLM (*Attention Is All You Need*) — s'imposent comme des alternatives puissantes mais plus gourmandes en calcul. 
+> * **Pourquoi YOLO reste incontournable :** Malgré l'essor des ViT, YOLO conserve une suprématie absolue pour le temps réel et l'embarqué. 
+> * **Résilience :** Les attaques adversariales restent redoutables sur les deux familles de modèles, même si les vecteurs d'attaque diffèrent. Vous pouvez tester un modèle de Vision Transformer directement en ligne sur le [Hugging Face Space - Image Classification ViT](https://huggingface.co/spaces/nateraw/vit-image-classifier).
 
 ---
 *Créé et documenté dans le cadre de l'évaluation de la sécurité des architectures de Deep Learning.*
