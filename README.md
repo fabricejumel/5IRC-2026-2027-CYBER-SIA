@@ -6,21 +6,29 @@ Bienvenue sur ce dépôt dédié à l'étude de la robustesse des modèles de vi
 
 ---
 
-## 🎯 1. Introduction à YOLOv8
+## 1. Introduction à YOLOv8
 **YOLOv8**, développé par [Ultralytics](https://github.com/ultralytics/ultralytics), est l'un des modèles de state-of-the-art les plus rapides et précis pour la détection d'objets, la segmentation d'instances et la classification (même si plus discutable). 
 * 🧪 **Tester en ligne :** Vous pouvez tester les capacités de détection en temps réel via l'interface [Hugging Face Spaces - YOLOv8](https://huggingface.co/spaces/Ultralytics/YOLOv8).
 * 📚 **Ressources Officielles :** Pour aller plus loin sur l'architecture, la structure des **datasets** (comme COCO) et l'entraînement de vos propres modèles, consultez la [[documentation officielle d'Ultralytics](https://docs.ultralytics.com/models/yolov8).
-
+* 
+> **💡 Info : Évolution de la famille YOLO (de YOLOv3 à YOLO26+)**
+> 
+> Né avec l'approche pionnière à passe unique de Joseph Redmon, l'écosystème YOLO n'a cessé de se réinventer pour repousser les limites du compromis vitesse-précision :
+> * **YOLOv3 (2018) :** A structuré l'ère moderne de la vision par ordinateur avec son architecture Darknet-53 et la détection multi-échelle, s'imposant comme le standard industriel de référence.
+> * **YOLOv5 à YOLOv8 (2020–2023) :** Portés par l'écosystème Ultralytics, ces modèles ont démocratisé le workflow PyTorch, introduit les architectures *anchor-free* et unifié des tâches variées, avec **YOLOv8** comme pierre angulaire.
+> * **YOLO11 & YOLO26 (2024–2026) :** Les itérations les plus récentes intègrent des optimisations majeures pour l'edge computing et l'inférence de bout en bout sans NMS (*Non-Maximum Suppression*) avec **YOLO26**, maximisant l'efficacité en production.
+> 
+> *C'est précisément cette omniprésence industrielle et cette quête constante de performance qui font de ces architectures des objets d'étude incontournables pour analyser la vulnérabilité face aux attaques adversariales.*
 --
 
-## 🦠 2. L'Empoisonnement de Données (Data Poisoning)
+## 2. L'Empoisonnement de Données (Data Poisoning)
 L'empoisonnement de données est une attaque menée lors de la phase **d'entraînement** du modèle. Elle consiste à injecter ou modifier discrètement des échantillons dans le jeu d'entraînement pour :
 * Introduire des portes dérobées (*backdoors*) qui déclenchent un comportement spécifique à la demande.
 * Dégrader la qualité globale de l'apprentissage ou biaiser les performances de généralisation du réseau de neurones avant même sa mise en production.
 
 ---
 
-## ⚡ 3. Les Attaques Adversariales à l'Inférence
+## 3. Les Attaques Adversariales à l'Inférence
 Contrairement à l'empoisonnement, les attaques adversariales se produisent au moment de l'**inférence** (en phase de test). Elles exploitent la sensibilité des gradients du modèle entraîné pour manipuler la perception du réseau :
 * Injecter des perturbations infimes ou des patchs ciblés dans l'image d'entrée.
 * Faire chuter la **confiance** des prédictions.
@@ -29,7 +37,7 @@ Contrairement à l'empoisonnement, les attaques adversariales se produisent au m
 
 ---
 
-## 📂 4. Les Notebooks du Projet (Étude comparative)
+## 4. Les Notebooks du Projet (Étude comparative)
 
 Ce dépôt contient trois approches méthodologiques implémentées sous Google Colab pour évaluer la vulnérabilité de YOLOv8 :
 
@@ -45,7 +53,7 @@ Ce dépôt contient trois approches méthodologiques implémentées sous Google 
 
 ---
 
-## 🚀 5. Conclusion & Perspectives : Robustesse en Conditions Réelles
+## 5. Conclusion & Perspectives : Robustesse en Conditions Réelles
 Si ces travaux démontrent la vulnérabilité des modèles actuels face à des perturbations optimisées (patchs physiques, bruits subtils), la recherche en IA se tourne massivement vers la **défense et la robustesse**. 
 
 
