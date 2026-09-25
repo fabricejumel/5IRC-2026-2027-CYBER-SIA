@@ -21,6 +21,15 @@ Bienvenue sur ce dépôt dédié à l'étude de la robustesse des modèles de vi
 > *C'est précisément cette omniprésence industrielle et cette quête constante de performance qui font de ces architectures des objets d'étude incontournables pour analyser la vulnérabilité face aux attaques adversariales.*
 --
 
+> **💡 Info : Anatomie & Spécificité de l'architecture YOLO**
+> 
+> Sur le plan structurel, tous les modèles YOLO reposent sur une colonne vertébrale commune de type **CNN (Convolutional Neural Network)** pour l'extraction hiérarchique des caractéristiques visuelles (du pixel brut aux formes complexes). 
+> 
+> Là où YOLO se distingue fondamentalement des architectures de classification traditionnelles (*two-stage detectors* comme Faster R-CNN), c'est dans sa philosophie **"You Only Look Once"** :
+> * **Prédiction globale en un seul passage :** L'image est découpée en une grille et le réseau analyse l'intégralité du contenu visuel en une seule passe avant-dernière (*forward pass*), prédisant simultanément les boîtes englobantes (*bounding boxes*) et les probabilités de classes.
+> * **Conséquence directe :** Cette interdépendance globale et spatiale offre des performances de pointe en temps réel, mais elle expose aussi le modèle à une vulnérabilité critique. Une perturbation minutieusement ciblée (comme un patch adversarial) peut se propager à travers les convolutions et perturber toute la grille de prédiction.
+
+
 ## 2. L'Empoisonnement de Données (Data Poisoning)
 L'empoisonnement de données est une attaque menée lors de la phase **d'entraînement** du modèle. Elle consiste à injecter ou modifier discrètement des échantillons dans le jeu d'entraînement pour :
 * Introduire des portes dérobées (*backdoors*) qui déclenchent un comportement spécifique à la demande.
