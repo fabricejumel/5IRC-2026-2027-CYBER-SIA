@@ -10,7 +10,7 @@ Bienvenue sur ce dépôt dédié à l'étude de la robustesse des modèles de vi
 **YOLOv8**, développé par [Ultralytics](https://github.com/ultralytics/ultralytics), est l'un des modèles de state-of-the-art les plus rapides et précis pour la détection d'objets, la segmentation d'instances et la classification (même si plus discutable). 
 * 🧪 **Tester en ligne :** Vous pouvez tester les capacités de détection en temps réel via l'interface [Hugging Face Spaces - YOLOv8](https://huggingface.co/spaces/Ultralytics/YOLOv8).
 * 📚 **Ressources Officielles :** Pour aller plus loin sur l'architecture, la structure des **datasets** (comme COCO) et l'entraînement de vos propres modèles, consultez la [[documentation officielle d'Ultralytics](https://docs.ultralytics.com/models/yolov8).
-* 
+* Exemples de datset et finetuning [https://platform.ultralytics.com/fabrice-jumel/datasets/traffic-signal-2?tab=models]
 > **💡 Info : Évolution de la famille YOLO (de YOLOv3 à YOLO26+)**
 > 
 > Né avec l'approche pionnière à passe unique de Joseph Redmon, l'écosystème YOLO n'a cessé de se réinventer pour repousser les limites du compromis vitesse-précision :
